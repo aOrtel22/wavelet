@@ -28,7 +28,7 @@ class Handler implements URLHandler {
                 if(parameters1[0].equals("s")){
                     for(int j = 0; j < words.size(); j++){
                         if(words.get(j).contains(parameters1[1])){
-                            query.add(parameters1[1]);
+                            query.add(words.get(j));
                         }
                     }
                     return String.format("Strings searched for: " + query.toString());
